@@ -1,0 +1,175 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #484f72;
+}
+h1{
+    color: rgb(31, 36, 37);
+    font-weight: bolder;
+    font-size: 3rem;
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+    text-decoration: underline rgb(69, 65, 65)
+}
+table{
+    width: 30vw;
+}
+table tr td{
+padding: 2px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 70px;
+}
+.btn{
+background-color: rgba(255, 255, 255, 0.802);
+height: 107px;
+width: 120px;
+border: none;
+border-radius: 1rem;
+box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+cursor: pointer;
+font-size: 4rem;
+font-weight: bolder;
+color: black;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+}
+.reset #reset-btn{
+height: 40px;
+width: 100px;
+border-radius: 5px;
+border: none;
+background-color: #262833;
+color: aliceblue;
+font-size: 1.25rem;
+padding: 2px;
+cursor: pointer;
+} */
+
+/* Reset and global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #484f72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading styling */
+h1 {
+    color: rgb(31, 36, 37);
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-decoration: underline rgb(69, 65, 65);
+}
+
+/* Table styling */
+table {
+    width: 360px;  /* Fixed width to ensure alignment */
+    border-collapse: collapse;
+}
+
+/* Table cell styling without borders */
+table td {
+    padding: 4px;
+}
+
+/* Button styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;         /* Explicit width */
+    height: 100px;        /* Explicit height */
+    background-color: rgba(196, 169, 169, 0.802);
+    font-size: 3rem;      /* Adjust font size for consistency */
+    font-weight: bold;
+    border: none;         /* No border */
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    color: rgb(105, 31, 31);
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.btn:disabled {
+    background-color: rgba(196, 169, 169, 0.6); /* Slightly dimmed for disabled */
+    color: inherit;
+    cursor: not-allowed;
+}
+
+/* Centering the container for the game */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Reset button styling */
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#reset-btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #262833;
+    color: aliceblue;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover, .new-game:hover {
+    background-color: #333;
+}
+.new-game{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #262833;
+    color: aliceblue;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.new-game-btn{
+    display: flex;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
+
